@@ -1,4 +1,4 @@
-#Easy Check rev 2 
+# Easy Check rev 2 
 ## Overview
 This version includes bug fixes from the previous iteration and is designed to fit in the prototype ,ade for HAX Xi'an Demo Day 2019. The deisgn has 4 boards:
 * A motherboard: power circuit, MCU (ATSAMD21G), control for heater, fans and servo. 
@@ -10,6 +10,6 @@ This version includes bug fixes from the previous iteration and is designed to f
 
 ## Code structure 
 
-##Errata
+## Errata
 
-##References
+## References
