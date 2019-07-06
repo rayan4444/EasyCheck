@@ -9,11 +9,10 @@ This version includes bug fixes from the previous iteration and is designed to f
 ## Hardware Connections
 
 ## Code structure
-To run all code properly some modification to the original board definition files from ARDUINO are necessary:
-- modified files are included in this repository
+To run all code properly some modification to the original board definition files from ARDUINO and 3rd party libraries are necessary:(modified files are included in this repository)
 - enable interrupts on pin PB03(in variant.cpp: change EXTERNAL_INT_NONE to EXTERNAL_INT_3)
 - enable interrupt on pin PB22 (in variant.cpp: change EXTERNAL_INT_NONE to EXTERNAL_INT_6)
-- modifying ADC128D818 library to correct read function error. files included in this repository
+- modifying ADC128D818 library to correct read function error.
 
 ## Errata
 - (1) Swapping connections for screen SPI:
