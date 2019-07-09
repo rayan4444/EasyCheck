@@ -6,7 +6,6 @@ This version includes bug fixes from the previous iteration and is designed to f
 * An Interface board: LCD screen, buzzer, 4 buttons, power LED
 * Test chip boards: Serial number IC, contacts for sensing paper, power LED, NTC (temperature sensing)
 
-## Hardware Connections
 ## Programming
 To set up the programming environment, follow the same steps as rev1.
 
