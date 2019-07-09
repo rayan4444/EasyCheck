@@ -97,7 +97,8 @@ uint16_t ADC128D818::read(uint8_t channel) {
   // Serial.print(" l: ");
   // Serial.println(low_byte);
   
-  uint16_t result = ((((uint16_t)high_byte) << 8) | ((uint16_t)low_byte)) & 0x0FFF;
+  //uint16_t result = ((((uint16_t)high_byte) << 8) | ((uint16_t)low_byte)) & 0x0FFF;
+  uint16_t result = ((((uint16_t)high_byte) << 8) | ((uint16_t)low_byte)) >> 4;
   return result;
 }
 
