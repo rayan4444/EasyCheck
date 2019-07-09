@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="no"/>
@@ -8391,50 +8391,50 @@ Source: www.kingbright.com</description>
 </net>
 <net name="MOSI" class="0">
 <segment>
-<wire x1="121.92" y1="-33.02" x2="114.3" y2="-33.02" width="0.1524" layer="91"/>
-<label x="114.3" y="-33.02" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
-<pinref part="JP1" gate="A" pin="5"/>
-</segment>
-<segment>
 <wire x1="147.32" y1="-101.6" x2="127" y2="-101.6" width="0.1524" layer="91"/>
 <label x="127" y="-101.6" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
 <pinref part="JP2" gate="A" pin="4"/>
 </segment>
-</net>
-<net name="SCK" class="0">
-<segment>
-<wire x1="121.92" y1="-35.56" x2="114.3" y2="-35.56" width="0.1524" layer="91"/>
-<label x="114.3" y="-35.56" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
-<pinref part="JP1" gate="A" pin="7"/>
-</segment>
-<segment>
-<wire x1="147.32" y1="-99.06" x2="127" y2="-99.06" width="0.1524" layer="91"/>
-<label x="127" y="-99.06" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
-<pinref part="JP2" gate="A" pin="3"/>
-</segment>
-</net>
-<net name="MISO" class="0">
-<segment>
-<wire x1="121.92" y1="-40.64" x2="114.3" y2="-40.64" width="0.1524" layer="91"/>
-<label x="114.3" y="-40.64" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
-<pinref part="JP1" gate="A" pin="11"/>
-</segment>
-<segment>
-<wire x1="147.32" y1="-111.76" x2="127" y2="-111.76" width="0.1524" layer="91"/>
-<label x="127" y="-111.76" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
-<pinref part="JP2" gate="A" pin="8"/>
-</segment>
-</net>
-<net name="/SS" class="0">
 <segment>
 <wire x1="121.92" y1="-38.1" x2="114.3" y2="-38.1" width="0.1524" layer="91"/>
 <label x="114.3" y="-38.1" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
 <pinref part="JP1" gate="A" pin="9"/>
 </segment>
+</net>
+<net name="SCK" class="0">
+<segment>
+<wire x1="147.32" y1="-99.06" x2="127" y2="-99.06" width="0.1524" layer="91"/>
+<label x="127" y="-99.06" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
+<pinref part="JP2" gate="A" pin="3"/>
+</segment>
+<segment>
+<wire x1="121.92" y1="-33.02" x2="114.3" y2="-33.02" width="0.1524" layer="91"/>
+<label x="114.3" y="-33.02" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
+<pinref part="JP1" gate="A" pin="5"/>
+</segment>
+</net>
+<net name="MISO" class="0">
+<segment>
+<wire x1="147.32" y1="-111.76" x2="127" y2="-111.76" width="0.1524" layer="91"/>
+<label x="127" y="-111.76" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
+<pinref part="JP2" gate="A" pin="8"/>
+</segment>
+<segment>
+<wire x1="121.92" y1="-40.64" x2="114.3" y2="-40.64" width="0.1524" layer="91"/>
+<label x="114.3" y="-40.64" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
+<pinref part="JP1" gate="A" pin="11"/>
+</segment>
+</net>
+<net name="/SS" class="0">
 <segment>
 <wire x1="147.32" y1="-114.3" x2="127" y2="-114.3" width="0.1524" layer="91"/>
 <label x="127" y="-114.3" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
 <pinref part="JP2" gate="A" pin="9"/>
+</segment>
+<segment>
+<wire x1="121.92" y1="-35.56" x2="114.3" y2="-35.56" width="0.1524" layer="91"/>
+<label x="114.3" y="-35.56" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
+<pinref part="JP1" gate="A" pin="7"/>
 </segment>
 </net>
 <net name="LCD_DC" class="0">

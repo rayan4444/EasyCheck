@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="no"/>
@@ -16947,28 +16947,16 @@ Source: http://www.onsemi.com/pub/Collateral/MC33269-D.PDF</description>
 <pinref part="JP2" gate="A" pin="2"/>
 </segment>
 </net>
-<net name="MOSI" class="0">
-<segment>
-<wire x1="320.04" y1="-78.74" x2="309.88" y2="-78.74" width="0.1524" layer="91"/>
-<label x="309.88" y="-78.74" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
-<pinref part="U3" gate="G$1" pin="PA17/I2C/I1/SERCOM1+3.1"/>
-</segment>
+<net name="SCK" class="0">
 <segment>
 <wire x1="218.44" y1="-223.52" x2="210.82" y2="-223.52" width="0.1524" layer="91"/>
 <label x="210.82" y="-223.52" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
 <pinref part="JP2" gate="A" pin="5"/>
 </segment>
-</net>
-<net name="SCK" class="0">
 <segment>
-<wire x1="320.04" y1="-81.28" x2="309.88" y2="-81.28" width="0.1524" layer="91"/>
-<label x="309.88" y="-81.28" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
-<pinref part="U3" gate="G$1" pin="PA18/I2/SERCOM1+3.2"/>
-</segment>
-<segment>
-<wire x1="218.44" y1="-226.06" x2="210.82" y2="-226.06" width="0.1524" layer="91"/>
-<label x="210.82" y="-226.06" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
-<pinref part="JP2" gate="A" pin="7"/>
+<wire x1="320.04" y1="-78.74" x2="309.88" y2="-78.74" width="0.1524" layer="91"/>
+<label x="309.88" y="-78.74" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
+<pinref part="U3" gate="G$1" pin="PA17/I2C/I1/SERCOM1+3.1"/>
 </segment>
 </net>
 <net name="MISO" class="0">
@@ -17050,18 +17038,6 @@ Source: http://www.onsemi.com/pub/Collateral/MC33269-D.PDF</description>
 <wire x1="317.5" y1="-48.26" x2="308.61" y2="-48.26" width="0.1524" layer="91"/>
 <pinref part="U3" gate="G$1" pin="PA05/EINT5/AIN5/SERCOM0.1"/>
 <wire x1="317.5" y1="-48.26" x2="320.04" y2="-48.26" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="/SS" class="0">
-<segment>
-<wire x1="320.04" y1="-83.82" x2="309.88" y2="-83.82" width="0.1524" layer="91"/>
-<label x="309.88" y="-83.82" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
-<pinref part="U3" gate="G$1" pin="PA19/I3/SERCOM1+3.3/I2SD0"/>
-</segment>
-<segment>
-<wire x1="218.44" y1="-228.6" x2="210.82" y2="-228.6" width="0.1524" layer="91"/>
-<label x="210.82" y="-228.6" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
-<pinref part="JP2" gate="A" pin="9"/>
 </segment>
 </net>
 <net name="SD_MOSI" class="0">
@@ -17198,17 +17174,12 @@ Source: http://www.onsemi.com/pub/Collateral/MC33269-D.PDF</description>
 <label x="381" y="-171.45" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<wire x1="403.86" y1="-68.58" x2="419.1" y2="-68.58" width="0.1524" layer="91"/>
-<label x="419.1" y="-68.58" size="1.27" layer="95" font="vector" xref="yes"/>
-<pinref part="U3" gate="G$1" pin="PB09/I9/AIN3/SERCOM4.1"/>
-</segment>
-</net>
-<net name="FAN0_SPEED" class="0">
-<segment>
 <label x="309.88" y="-50.8" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
 <wire x1="320.04" y1="-50.8" x2="309.88" y2="-50.8" width="0.1524" layer="91"/>
 <pinref part="U3" gate="G$1" pin="PA06/EINT6/AIN6/SERCOM0.2"/>
 </segment>
+</net>
+<net name="FAN0_SPEED" class="0">
 <segment>
 <label x="386.08" y="-162.56" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
 <pinref part="R15" gate="G$1" pin="1"/>
@@ -17218,6 +17189,11 @@ Source: http://www.onsemi.com/pub/Collateral/MC33269-D.PDF</description>
 <wire x1="396.24" y1="-162.56" x2="386.08" y2="-162.56" width="0.1524" layer="91"/>
 <junction x="396.24" y="-162.56"/>
 <pinref part="FAN1" gate="G$1" pin="3"/>
+</segment>
+<segment>
+<wire x1="403.86" y1="-68.58" x2="419.1" y2="-68.58" width="0.1524" layer="91"/>
+<label x="419.1" y="-68.58" size="1.27" layer="95" font="vector" xref="yes"/>
+<pinref part="U3" gate="G$1" pin="PB09/I9/AIN3/SERCOM4.1"/>
 </segment>
 </net>
 <net name="N$3" class="0">
@@ -17370,6 +17346,30 @@ Source: http://www.onsemi.com/pub/Collateral/MC33269-D.PDF</description>
 <wire x1="403.86" y1="-78.74" x2="416.56" y2="-78.74" width="0.1524" layer="91"/>
 <label x="416.56" y="-78.74" size="1.27" layer="95" font="vector" xref="yes"/>
 <pinref part="U3" gate="G$1" pin="PB23/I7/SERCOM5.3"/>
+</segment>
+</net>
+<net name="MOSI" class="0">
+<segment>
+<wire x1="320.04" y1="-83.82" x2="309.88" y2="-83.82" width="0.1524" layer="91"/>
+<label x="309.88" y="-83.82" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
+<pinref part="U3" gate="G$1" pin="PA19/I3/SERCOM1+3.3/I2SD0"/>
+</segment>
+<segment>
+<wire x1="218.44" y1="-228.6" x2="210.82" y2="-228.6" width="0.1524" layer="91"/>
+<label x="210.82" y="-228.6" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
+<pinref part="JP2" gate="A" pin="9"/>
+</segment>
+</net>
+<net name="/SS" class="0">
+<segment>
+<wire x1="320.04" y1="-81.28" x2="309.88" y2="-81.28" width="0.1524" layer="91"/>
+<label x="309.88" y="-81.28" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
+<pinref part="U3" gate="G$1" pin="PA18/I2/SERCOM1+3.2"/>
+</segment>
+<segment>
+<wire x1="218.44" y1="-226.06" x2="210.82" y2="-226.06" width="0.1524" layer="91"/>
+<label x="210.82" y="-226.06" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
+<pinref part="JP2" gate="A" pin="7"/>
 </segment>
 </net>
 </nets>
